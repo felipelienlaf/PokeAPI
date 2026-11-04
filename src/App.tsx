@@ -1,12 +1,11 @@
-import PokemonCard from "./components/PokemonCard";
+import PokemonSearch from "./components/PokemonSearch";
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
-    <div>
+    <main className="app">
       <h1>Buscador de Pokémon</h1>
-      <PokemonCard nombre="pikachu" />
-    </div>
+      <PokemonSearch />
+    </main>
   );
 }
-
-export default App;
