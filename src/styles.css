@@ -1,0 +1,108 @@
+/* Estilos del buscador y del semáforo de estados (cargando / éxito / error). */
+.app {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.app h1 {
+  margin: 0 0 1.25rem;
+  font-size: 1.75rem;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 6px;
+}
+
+.search button {
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: #c8372d;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #a82c23;
+}
+
+.search input:focus-visible,
+.search button:focus-visible {
+  outline: 2px solid #c8372d;
+  outline-offset: 2px;
+}
+
+/* Semáforo: solo uno de los tres estados se muestra a la vez. */
+.status {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-radius: 6px;
+}
+
+.status-loading {
+  background: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.status-error {
+  background: color-mix(in srgb, #c8372d 14%, transparent);
+  border-color: #c8372d;
+}
+
+.card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1.25rem;
+  border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-radius: 10px;
+}
+
+.card img {
+  justify-self: center;
+  image-rendering: pixelated;
+}
+
+.card h2 {
+  margin: 0.5rem 0 0;
+}
+
+.card h3 {
+  margin: 0.9rem 0 0.3rem;
+  font-size: 1rem;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.card .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.card .chips li {
+  padding: 0.15rem 0.7rem;
+  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 999px;
+}

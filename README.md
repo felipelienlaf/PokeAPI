@@ -16,4 +16,4 @@ React, TypeScript, Vite, ESLint, PokéAPI (https://pokeapi.co/)
 5. Abrir http://localhost:5173/
 
 ## Flujo de trabajo
-Cada integrante trabajó en su propia rama y entregó sus cambios mediante pull request, con revisión cruzada.
+Él integrante trabajó en su propia rama y entregó sus cambios mediante pull request, con revisión cruzada.
